@@ -40,7 +40,9 @@ const CustomCursor: React.FC<ButtonProps> = ({
           cursor: ${!isDisabled ? "none !important" : "unset"};
         }
       `}</style>
-      <img src={component} style={styles} className="rsc-cursor" />
+      {!isDisabled && (
+        <img src={component} style={styles} className="rsc-cursor" />
+      )}
     </>
   );
 };
