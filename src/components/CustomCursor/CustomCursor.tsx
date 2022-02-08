@@ -4,11 +4,11 @@ import "../../styles/index.css";
 
 interface ButtonProps {
   component: any;
-  width: number;
-  height: number;
-  transform: string;
-  zIndex: number;
-  isDisabled: boolean;
+  width?: number;
+  height?: number;
+  transform?: string;
+  zIndex?: number;
+  isDisabled?: boolean;
 }
 
 const CustomCursor: React.FC<ButtonProps> = ({
