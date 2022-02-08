@@ -42,7 +42,7 @@ ReactDOM.render(
 | width      | number  | 18      | Width                                                               |
 | height     | string  | 18      | Height                                                              |
 | zIndex     | number  | 999     | z-index, adjust for your app                                        |
-| transform  | string  | 18      | You can use this to rotate your cursor, works exactly like css rule |
+| transform  | string  | "none"  | You can use this to rotate your cursor, works exactly like css rule |
 
 ## Custom styles
 
