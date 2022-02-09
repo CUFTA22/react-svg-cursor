@@ -5,3 +5,8 @@
   will-change: transform;
   pointer-events: none;
 }
+
+.rsc-cursor svg {
+  width: 100%;
+  height: auto;
+}

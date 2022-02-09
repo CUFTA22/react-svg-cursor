@@ -32,6 +32,18 @@ const CustomCursor: React.FC<ButtonProps> = ({
 
   if (!component) return null;
 
+  const Svg = component;
+
+  const Cursor = () => {
+    return typeof component === "string" ? (
+      <img src={component} style={styles} className="rsc-cursor" />
+    ) : (
+      <div style={styles} className="rsc-cursor">
+        {typeof component === "function" ? <Svg /> : component}
+      </div>
+    );
+  };
+
   return (
     <>
       {/* @ts-ignore */}
@@ -40,9 +52,7 @@ const CustomCursor: React.FC<ButtonProps> = ({
           cursor: ${!isDisabled ? "none !important" : "unset"};
         }
       `}</style>
-      {!isDisabled && (
-        <img src={component} style={styles} className="rsc-cursor" />
-      )}
+      {!isDisabled && <Cursor />}
     </>
   );
 };
