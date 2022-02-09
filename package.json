@@ -1,6 +1,6 @@
 {
   "name": "react-svg-cursor",
-  "version": "2.3.0",
+  "version": "2.5.0",
   "description": "Use any SVG or Image as your custom cursor",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.es.js",
@@ -28,7 +28,7 @@
     "React-Custom-Cursor"
   ],
   "author": "CUFTA22",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CUFTA22/react-svg-cursor/issues"
   },
